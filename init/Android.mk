@@ -13,18 +13,18 @@
 # GNU General Public License for more details.
 #
 
-ifeq ($(TARGET_INIT_VENDOR_LIB),libinit_sec)
+ifeq ($(TARGET_INIT_VENDOR_LIB),libinit_matisse)
 
 LOCAL_PATH := $(call my-dir)
 LIBINIT_SEC_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
-LOCAL_C_INCLUDES := system/core/init system/core/healthd bootable/recovery
+LOCAL_C_INCLUDES := system/core/init
 
 LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
-LOCAL_SRC_FILES := init_sec.cpp
-LOCAL_MODULE := libinit_sec
+LOCAL_SRC_FILES := init_matisse.cpp
+LOCAL_MODULE := libinit_matisse
 include $(BUILD_STATIC_LIBRARY)
 
 endif

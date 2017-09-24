@@ -30,8 +30,8 @@ BOARD_CHARGING_CMDLINE_VALUE := "charger"
 #BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # Healthd
-TARGET_INIT_VENDOR_LIB := libinit_sec
-TARGET_RECOVERY_DEVICE_MODULES := libinit_sec
+TARGET_INIT_VENDOR_LIB := libinit_matisse
+TARGET_RECOVERY_DEVICE_MODULES := libinit_matisse
 #BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/samsung/matisse-common/libhealthd/images
 TARGET_UNIFIED_DEVICE := true
 
